@@ -6,7 +6,7 @@
       "websiteURL": "https://www.arduino.cc/",
       "email": "packages@arduino.cc",
       "help": {
-        "online": "https://www.arduino.cc/en/Reference/HomePage"
+        "online": "https://github.com/PTSolns/PTSolnsCore"
       },
       "platforms": [
         {
@@ -16,10 +16,10 @@
           "category": "Arduino",
           "url": "https://ptsolns.github.io/PTSolnsCore/PTSolns_AVR_Boards.tar.gz",
           "archiveFileName": "PTSolns_AVR_Boards.tar.gz",
-          "checksum": "SHA-256:61eb80e848e635785614493a772b32a7e7a0804675450133b55f69edd2d1603e",
-          "size": "7983331",
+          "checksum": "SHA-256:741dc52b982f6d78b4e974e593c8f9ff2c2dcd25b425d11c6428c0db10ad2130",
+          "size": "7983132",
           "help": {
-            "online": "https://www.arduino.cc/en/Reference/HomePage"
+            "online": "https://github.com/PTSolns/PTSolnsCore"
           },
           "boards": [
             {
@@ -4870,10 +4870,10 @@
     {
       "name": "PTSolnsESP32",
       "maintainer": "Espressif Systems",
-      "websiteURL": "https://github.com/espressif/arduino-esp32",
+      "websiteURL": "https://github.com/PTSolns/PTSolnsCore",
       "email": "hristo@espressif.com",
       "help": {
-        "online": "https://esp32.com"
+        "online": "https://github.com/PTSolns/PTSolnsCore"
       },
       "platforms": [
         {
@@ -4883,10 +4883,10 @@
           "category": "ESP32",
           "url": "https://ptsolns.github.io/PTSolnsCore/PTSolns_ESP32_Boards.tar.gz",
           "archiveFileName": "PTSolns_ESP32_Boards.tar.gz",
-          "checksum": "SHA-256:f06e87f24867cfe3ce0afc67c45b7fa0b484f8fc05e28d43219bba8539aec8f6",
-          "size": "25900502",
+          "checksum": "SHA-256:a5ea169ebd3ae79e6c5654e9f12081e46ff23460da557963d567c7ff0f30639d",
+          "size": "25900601",
           "help": {
-            "online": ""
+            "online": "https://github.com/PTSolns/PTSolnsCore"
           },
           "boards": [
             {
