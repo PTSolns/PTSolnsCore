@@ -27,14 +27,16 @@ jobs:
 
     - name: Merge main into gh-pages
       run: |
+        cat boards.json
         git fetch origin gh-pages:gh-pages || echo "gh-pages branch not found, creating it."
         git checkout gh-pages || git checkout -b gh-pages # Checkout gh-pages, create if it doesn't exist
         git merge --no-ff --strategy-option=theirs main --allow-unrelated-histories
+        cat boards.json
 
     - name: Create tar.gz archives
       run: |
-        find avr-1.8.6 -print0 | sort -z | tar -czf PTSolns_AVR_Boards.tar.gz --no-recursion --null -T - --mtime='1970-01-01 00:00:00 UTC'
-        find esp32-3.3.3 -print0 | sort -z | tar -czf PTSolns_ESP32_Boards.tar.gz --no-recursion --null -T - --mtime='1970-01-01 00:00:00 UTC'
+        tar -czf PTSolns_AVR_Boards.tar.gz avr-1.8.6
+        tar -czf PTSolns_ESP32_Boards.tar.gz esp32-3.3.3
 
     - name: Calculate Hashes and Sizes
       id: calculate
@@ -58,6 +60,5 @@ jobs:
 
     - name: Commit and Push Changes
       run: |
-        git add PTSolns_AVR_Boards.tar.gz PTSolns_ESP32_Boards.tar.gz boards.json
         git commit -m "CI: Update boards"
         git push origin gh-pages
