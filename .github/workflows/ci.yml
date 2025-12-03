@@ -58,5 +58,6 @@ jobs:
 
     - name: Commit and Push Changes
       run: |
+        git add PTSolns_AVR_Boards.tar.gz PTSolns_ESP32_Boards.tar.gz boards.json
         git commit -m "CI: Update boards"
         git push origin gh-pages
