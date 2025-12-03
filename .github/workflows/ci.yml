@@ -10,10 +10,12 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         fetch-depth: 0 # Fetch all history for gh-pages checkout
 
@@ -27,11 +29,10 @@ jobs:
         git fetch origin gh-pages:gh-pages
         git checkout gh-pages
 
-    - name: Create AVR archive
-      run: tar -czf PTSolns_AVR_Boards.tar.gz avr-1.8.6
-
-    - name: Create ESP32 archive
-      run: tar -czf PTSolns_ESP32_Boards.tar.gz esp32-3.3.3
+    - name: Create tar.gz archives
+      run: |
+        tar -czf PTSolns_AVR_Boards.tar.gz avr-1.8.6
+        tar -czf PTSolns_ESP32_Boards.tar.gz esp32-3.3.3
 
     - name: Calculate Hashes and Sizes
       id: calculate
