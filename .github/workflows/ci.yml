@@ -33,8 +33,8 @@ jobs:
 
     - name: Create tar.gz archives
       run: |
-        tar -czf PTSolns_AVR_Boards.tar.gz avr-1.8.6
-        tar -czf PTSolns_ESP32_Boards.tar.gz esp32-3.3.3
+        find avr-1.8.6 -print0 | sort -z | tar -czf PTSolns_AVR_Boards.tar.gz --no-recursion --null -T - --mtime='1970-01-01 00:00:00 UTC'
+        find esp32-3.3.3 -print0 | sort -z | tar -czf PTSolns_ESP32_Boards.tar.gz --no-recursion --null -T - --mtime='1970-01-01 00:00:00 UTC'
 
     - name: Calculate Hashes and Sizes
       id: calculate
