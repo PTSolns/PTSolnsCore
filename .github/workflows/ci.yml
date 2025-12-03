@@ -18,19 +18,17 @@ jobs:
       uses: actions/checkout@v4
       with:
         ref: main # Checkout the main branch
-        fetch-depth: 0 # Fetch all history for gh-pages operations
+        fetch-depth: 0 # Fetch all history
 
     - name: Configure Git
       run: |
         git config user.name "GitHub Actions"
         git config user.email "actions@github.com"
 
-    - name: Merge main into gh-pages
+    - name: Prepare gh-pages branch
       run: |
-        cat boards.json
-        git fetch origin gh-pages:gh-pages || echo "gh-pages branch not found, creating it."
-        git checkout gh-pages || git checkout -b gh-pages # Checkout gh-pages, create if it doesn't exist
-        git merge --no-ff --strategy-option=theirs main --allow-unrelated-histories
+        git checkout -B gh-pages
+        git push -f origin gh-pages
         cat boards.json
 
     - name: Create tar.gz archives
