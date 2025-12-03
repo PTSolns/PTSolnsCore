@@ -14,20 +14,22 @@ jobs:
       contents: write
 
     steps:
-    - name: Checkout repository
+    - name: Checkout main branch
       uses: actions/checkout@v4
       with:
-        fetch-depth: 0 # Fetch all history for gh-pages checkout
+        ref: main # Checkout the main branch
+        fetch-depth: 0 # Fetch all history for gh-pages operations
 
     - name: Configure Git
       run: |
         git config user.name "GitHub Actions"
         git config user.email "actions@github.com"
 
-    - name: Checkout gh-pages branch
+    - name: Merge main into gh-pages
       run: |
-        git fetch origin gh-pages:gh-pages
-        git checkout gh-pages
+        git fetch origin gh-pages:gh-pages || echo "gh-pages branch not found, creating it."
+        git checkout gh-pages || git checkout -b gh-pages # Checkout gh-pages, create if it doesn't exist
+        git merge --no-ff --strategy-option=theirs main --allow-unrelated-histories
 
     - name: Create tar.gz archives
       run: |
