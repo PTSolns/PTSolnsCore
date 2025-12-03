@@ -46,7 +46,7 @@ esp32_family.build.board=ESP32_FAMILY
 
 ##############################################################
 
-esp32.name=PTSolns ESP32 microWatt [Buy this Board](https://ptsolns.com/products/esp32-microwatt) [Supporting Materials] (https://github.com/PTSolns/docs/tree/main/Products/PTS-00165_ESP32_microWatt)
+esp32.name=PTSolns ESP32 microWatt [Buy this Board](https://ptsolns.com/products/esp32-microwatt) [Supporting Materials](https://github.com/PTSolns/docs/tree/main/Products/PTS-00165_ESP32_microWatt)
 
 esp32.bootloader.tool=esptool_py
 esp32.bootloader.tool.default=esptool_py

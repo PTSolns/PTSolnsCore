@@ -2,7 +2,7 @@
   "packages": [
     {
       "name": "PTSolnsAVR",
-      "maintainer": "Arduino",
+      "maintainer": "PTSolns",
       "websiteURL": "https://www.arduino.cc/",
       "email": "packages@arduino.cc",
       "help": {
@@ -4869,7 +4869,7 @@
     },
     {
       "name": "PTSolnsESP32",
-      "maintainer": "Espressif Systems",
+      "maintainer": "PTSolns",
       "websiteURL": "https://github.com/PTSolns/PTSolnsCore",
       "email": "hristo@espressif.com",
       "help": {
