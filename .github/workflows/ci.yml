@@ -1,0 +1,60 @@
+name: Publish GH-Pages
+
+on:
+  push:
+    branches:
+      - '**' # Trigger on all branch pushes
+  workflow_dispatch:
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0 # Fetch all history for gh-pages checkout
+
+    - name: Configure Git
+      run: |
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+
+    - name: Checkout gh-pages branch
+      run: |
+        git fetch origin gh-pages:gh-pages
+        git checkout gh-pages
+
+    - name: Create AVR archive
+      run: tar -czf PTSolns_AVR_Boards.tar.gz avr-1.8.6
+
+    - name: Create ESP32 archive
+      run: tar -czf PTSolns_ESP32_Boards.tar.gz esp32-3.3.3
+
+    - name: Calculate Hashes and Sizes
+      id: calculate
+      run: |
+        AVR_HASH=$(sha256sum PTSolns_AVR_Boards.tar.gz | awk '{print $1}')
+        AVR_SIZE=$(stat -c%s PTSolns_AVR_Boards.tar.gz)
+        ESP32_HASH=$(sha256sum PTSolns_ESP32_Boards.tar.gz | awk '{print $1}')
+        ESP32_SIZE=$(stat -c%s PTSolns_ESP32_Boards.tar.gz)
+
+        echo "AVR_HASH=$AVR_HASH" >> $GITHUB_OUTPUT
+        echo "AVR_SIZE=$AVR_SIZE" >> $GITHUB_OUTPUT
+        echo "ESP32_HASH=$ESP32_HASH" >> $GITHUB_OUTPUT
+        echo "ESP32_SIZE=$ESP32_SIZE" >> $GITHUB_OUTPUT
+
+    - name: Update boards.json with sed
+      run: |
+        sed -i "s|<avr_checksum>|${{ steps.calculate.outputs.AVR_HASH }}|" boards.json
+        sed -i "s|<avr_size>|${{ steps.calculate.outputs.AVR_SIZE }}|" boards.json
+        sed -i "s|<esp_checksum>|${{ steps.calculate.outputs.ESP32_HASH }}|" boards.json
+        sed -i "s|<esp_size>|${{ steps.calculate.outputs.ESP32_SIZE }}|" boards.json
+
+    - name: Commit and Push Changes
+      run: |
+        git add PTSolns_AVR_Boards.tar.gz PTSolns_ESP32_Boards.tar.gz boards.json
+        git commit -m "CI: Update board archives, hashes, and sizes"
+        git push origin gh-pages

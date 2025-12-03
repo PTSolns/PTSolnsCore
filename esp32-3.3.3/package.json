@@ -1,0 +1,13 @@
+{
+  "name": "framework-ptsolnsespressif32",
+  "version": "3.3.3",
+  "description": "PTSolns ESP32",
+  "keywords": [
+    "framework"
+  ],
+  "license": "LGPL-2.1-or-later",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PTSolns/PTSolnsCore"
+  }
+}
