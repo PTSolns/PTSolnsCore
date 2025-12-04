@@ -3,8 +3,8 @@
     {
       "name": "PTSolnsAVR",
       "maintainer": "PTSolns",
-      "websiteURL": "https://www.arduino.cc/",
-      "email": "packages@arduino.cc",
+      "websiteURL": "https://ptsolns.com/",
+      "email": "contact@ptsolns.com",
       "help": {
         "online": "https://github.com/PTSolns/PTSolnsCore"
       },
@@ -13,7 +13,7 @@
           "name": "PTSolns AVR Boards",
           "architecture": "avr",
           "version": "1.8.6",
-          "category": "Arduino",
+          "category": "AVR",
           "url": "https://ptsolns.github.io/PTSolnsCore/PTSolns_AVR_Boards.tar.gz",
           "archiveFileName": "PTSolns_AVR_Boards.tar.gz",
           "checksum": "SHA-256:<avr_checksum>",
@@ -25,6 +25,9 @@
             {
               "name": "Uno R3+"
             },
+			{
+              "name": "DIY UNO Kit"
+            },
             {
               "name": "Nano Flip"
             },
@@ -32,7 +35,7 @@
               "name": "Leonardo+"
             },
             {
-              "name": "Nano Fip 3V3"
+              "name": "Nano Flip 3V3"
             }
           ],
           "toolsDependencies": [
@@ -4871,7 +4874,7 @@
       "name": "PTSolnsESP32",
       "maintainer": "PTSolns",
       "websiteURL": "https://github.com/PTSolns/PTSolnsCore",
-      "email": "hristo@espressif.com",
+      "email": "contact@ptsolns.com",
       "help": {
         "online": "https://github.com/PTSolns/PTSolnsCore"
       },
