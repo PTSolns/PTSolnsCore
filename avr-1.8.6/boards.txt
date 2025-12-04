@@ -107,7 +107,7 @@ unokit.build.variant=standard
 
 ##############################################################
 
-nano.name=PTSolns Nano Flip   [Supporting Materials](https://github.com/PTSolns/docs/tree/main/Products/PTS-00195_Nano_Flip)   [Buy this Board](https://ptsolns.com/products/nano-flip)
+nano.name=PTSolns Nano Flip    [Supporting Materials](https://github.com/PTSolns/docs/tree/main/Products/PTS-00195_Nano_Flip)   [Buy this Board](https://ptsolns.com/products/nano-flip)
 
 
 
