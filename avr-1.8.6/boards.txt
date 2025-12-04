@@ -4,7 +4,8 @@ menu.cpu=Processor
 
 ##############################################################
 
-uno.name=PTSolns Uno R3+ [Supporting Materials](https://github.com/PTSolns/docs/tree/main/Products/PTS-00194_Uno_R3_Plus)   [Buy this Board](https://ptsolns.com/products/uno-r3)
+uno.name=PTSolns Uno R3+    [Supporting Materials](https://github.com/PTSolns/docs/tree/main/Products/PTS-00194_Uno_R3_Plus)   [Buy this Board](https://ptsolns.com/products/uno-r3)
+
 
 
 
@@ -55,7 +56,8 @@ uno.build.variant=standard
 
 ##############################################################
 
-unokit.name=PTSolns DIY UNO Kit [Supporting Materials](https://github.com/PTSolns/docs/tree/main/Products/PTS-00197_DIY_UNO_Kit)   [Buy this Board](https://ptsolns.com/products/diy-uno-kit)
+unokit.name=PTSolns DIY UNO Kit    [Supporting Materials](https://github.com/PTSolns/docs/tree/main/Products/PTS-00197_DIY_UNO_Kit)   [Buy this Board](https://ptsolns.com/products/diy-uno-kit)
+
 
 
 unokit.vid.0=0x2341
@@ -105,7 +107,8 @@ unokit.build.variant=standard
 
 ##############################################################
 
-nano.name=PTSolns Nano Flip [Supporting Materials](https://github.com/PTSolns/docs/tree/main/Products/PTS-00195_Nano_Flip)   [Buy this Board](https://ptsolns.com/products/nano-flip)
+nano.name=PTSolns Nano Flip    [Supporting Materials](https://github.com/PTSolns/docs/tree/main/Products/PTS-00195_Nano_Flip)   [Buy this Board](https://ptsolns.com/products/nano-flip)
+
 
 
 nano.upload_port.0.board=nano
@@ -172,7 +175,8 @@ nano.menu.cpu.atmega168.build.mcu=atmega168
 
 ##############################################################
 
-leonardo.name=PTSolns Leonardo+ [Supporting Materials](https://github.com/PTSolns/docs/tree/main/Products/PTS-00196_Leonardo_Plus)   [Buy this Board](https://ptsolns.com/products/leonardo)
+leonardo.name=PTSolns Leonardo+    [Supporting Materials](https://github.com/PTSolns/docs/tree/main/Products/PTS-00196_Leonardo_Plus)   [Buy this Board](https://ptsolns.com/products/leonardo)
+
 
 leonardo.vid.0=0x2341
 leonardo.pid.0=0x0036
@@ -224,7 +228,8 @@ leonardo.build.extra_flags={build.usb_flags}
 
 ##############################################################
 
-pro.name=PTSolns Nano Flip 3V3 [Supporting Materials](https://github.com/PTSolns/docs/tree/main/Products/PTS-00195_Nano_Flip)   [Buy this Board](https://ptsolns.com/products/nano-flip-3v3)
+pro.name=PTSolns Nano Flip 3V3    [Supporting Materials](https://github.com/PTSolns/docs/tree/main/Products/PTS-00195_Nano_Flip)   [Buy this Board](https://ptsolns.com/products/nano-flip-3v3)
+
 
 
 pro.upload_port.0.board=pro
