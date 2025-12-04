@@ -4,7 +4,7 @@ menu.cpu=Processor
 
 ##############################################################
 
-uno.name=PTSolns Uno R3+    [Supporting Materials](https://github.com/PTSolns/docs/tree/main/Products/PTS-00194_Uno_R3_Plus)   [Buy this Board](https://ptsolns.com/products/uno-r3)
+uno.name=PTSolns Uno R3+     [Supporting Materials](https://github.com/PTSolns/docs/tree/main/Products/PTS-00194_Uno_R3_Plus)   [Buy this Board](https://ptsolns.com/products/uno-r3)
 
 
 
