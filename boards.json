@@ -12,7 +12,7 @@
         {
           "name": "PTSolns AVR Boards",
           "architecture": "avr",
-          "version": "0.0.2",
+          "version": "0.0.3",
           "category": "AVR",
           "url": "https://ptsolns.github.io/PTSolnsCore/PTSolns_AVR_Boards.tar.gz",
           "archiveFileName": "PTSolns_AVR_Boards.tar.gz",
@@ -4882,7 +4882,7 @@
         {
           "name": "PTSolns ESP32 Boards",
           "architecture": "esp32",
-          "version": "0.0.2",
+          "version": "0.0.3",
           "category": "ESP32",
           "url": "https://ptsolns.github.io/PTSolnsCore/PTSolns_ESP32_Boards.tar.gz",
           "archiveFileName": "PTSolns_ESP32_Boards.tar.gz",
