@@ -53,6 +53,55 @@ uno.build.variant=standard
 
 ##############################################################
 
+unokit.name=PTSolns DIY UNO Kit [Buy this Board](https://ptsolns.com/products/diy-uno-kit) [Supporting Materials](https://github.com/PTSolns/docs/tree/main/Products/PTS-00197_DIY_UNO_Kit)
+
+unokit.vid.0=0x2341
+unokit.pid.0=0x0043
+unokit.vid.1=0x2341
+unokit.pid.1=0x0001
+unokit.vid.2=0x2A03
+unokit.pid.2=0x0043
+unokit.vid.3=0x2341
+unokit.pid.3=0x0243
+unokit.vid.4=0x2341
+unokit.pid.4=0x006A
+unokit.upload_port.0.vid=0x2341
+unokit.upload_port.0.pid=0x0043
+unokit.upload_port.1.vid=0x2341
+unokit.upload_port.1.pid=0x0001
+unokit.upload_port.2.vid=0x2A03
+unokit.upload_port.2.pid=0x0043
+unokit.upload_port.3.vid=0x2341
+unokit.upload_port.3.pid=0x0243
+unokit.upload_port.4.vid=0x2341
+unokit.upload_port.4.pid=0x006A
+unokit.upload_port.5.board=uno
+
+unokit.upload.tool=avrdude
+unokit.upload.tool.default=avrdude
+unokit.upload.tool.network=arduino_ota
+unokit.upload.protocol=arduino
+unokit.upload.maximum_size=32256
+unokit.upload.maximum_data_size=2048
+unokit.upload.speed=115200
+
+unokit.bootloader.tool=avrdude
+unokit.bootloader.tool.default=avrdude
+unokit.bootloader.low_fuses=0xFF
+unokit.bootloader.high_fuses=0xDE
+unokit.bootloader.extended_fuses=0xFD
+unokit.bootloader.unlock_bits=0x3F
+unokit.bootloader.lock_bits=0x0F
+unokit.bootloader.file=optiboot/optiboot_atmega328.hex
+
+unokit.build.mcu=atmega328p
+unokit.build.f_cpu=16000000L
+unokit.build.board=AVR_UNO
+unokit.build.core=arduino
+unokit.build.variant=standard
+
+##############################################################
+
 nano.name=PTSolns Nano Flip [Buy this Board](https://ptsolns.com/products/nano-flip) [Supporting Materials](https://github.com/PTSolns/docs/tree/main/Products/PTS-00196_Nano_Flip)
 
 nano.upload_port.0.board=nano
