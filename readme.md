@@ -1,4 +1,4 @@
-# PTSolnsCore
+# PTSolns Core
 
 This repository contains the core platform files used by the PTSolns ecosystem and the PTSolns IDE.
 
