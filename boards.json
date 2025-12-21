@@ -12,7 +12,7 @@
         {
           "name": "PTSolns AVR Boards",
           "architecture": "avr",
-          "version": "0.0.7",
+          "version": "0.0.8",
           "category": "AVR",
           "url": "https://ptsolns.github.io/PTSolnsCore/PTSolns_AVR_Boards.tar.gz",
           "archiveFileName": "PTSolns_AVR_Boards.tar.gz",
@@ -4882,7 +4882,7 @@
         {
           "name": "PTSolns ESP32 Boards",
           "architecture": "esp32",
-          "version": "0.0.7",
+          "version": "0.0.8",
           "category": "ESP32",
           "url": "https://ptsolns.github.io/PTSolnsCore/PTSolns_ESP32_Boards.tar.gz",
           "archiveFileName": "PTSolns_ESP32_Boards.tar.gz",
@@ -4905,27 +4905,37 @@
             {
               "packager": "esp32",
               "name": "esp-rv32",
-              "version": "2507"
+              "version": "2302"
             },
             {
               "packager": "esp32",
               "name": "esp-x32",
-              "version": "2507"
+              "version": "2302"
+            },
+            {
+              "packager": "esp32",
+              "name": "esp-xs2",
+              "version": "2302"
+            },
+            {
+              "packager": "esp32",
+              "name": "esp-xs3",
+              "version": "2302"
             },
             {
               "packager": "esp32",
               "name": "esp32-arduino-libs",
-              "version": "idf-release_v5.5-f1a1df9b-v3"
+              "version": "idf-release_v5.1-632e0c2a"
             },
             {
               "packager": "esp32",
               "name": "esptool_py",
-              "version": "5.1.0"
+              "version": "4.6"
             },
             {
               "packager": "esp32",
               "name": "mklittlefs",
-              "version": "4.0.2-db0513a"
+              "version": "3.0.0-gnu12-dc7f933"
             },
             {
               "packager": "esp32",
@@ -4935,17 +4945,17 @@
             {
               "packager": "esp32",
               "name": "openocd-esp32",
-              "version": "v0.12.0-esp32-20250707"
+              "version": "v0.12.0-esp32-20240821"
             },
             {
               "packager": "esp32",
               "name": "riscv32-esp-elf-gdb",
-              "version": "16.3_20250913"
+              "version": "12.1_20231023"
             },
             {
               "packager": "esp32",
               "name": "xtensa-esp-elf-gdb",
-              "version": "16.3_20250913"
+              "version": "12.1_20231023"
             }
           ]
         }
