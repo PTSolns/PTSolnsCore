@@ -16,8 +16,8 @@
           "category": "AVR",
           "url": "https://ptsolns.github.io/PTSolnsCore/PTSolns_AVR_Boards.tar.gz",
           "archiveFileName": "PTSolns_AVR_Boards.tar.gz",
-          "checksum": "SHA-256:<avr_checksum>",
-          "size": "<avr_size>",
+          "checksum": "SHA-256:30fa8f1b69522cbf2b182b7b396475e8f05f807840d2d9cfca6f36474606061e",
+          "size": "7969084",
           "help": {
             "online": "https://github.com/PTSolns/PTSolnsCore"
           },
@@ -4886,8 +4886,8 @@
           "category": "ESP32",
           "url": "https://ptsolns.github.io/PTSolnsCore/PTSolns_ESP32_Boards.tar.gz",
           "archiveFileName": "PTSolns_ESP32_Boards.tar.gz",
-          "checksum": "SHA-256:<esp_checksum>",
-          "size": "<esp_size>",
+          "checksum": "SHA-256:97906f69cbb24b0291a07892ad6e253ccc133874f2e93a368cda276a8edc8107",
+          "size": "23577886",
           "help": {
             "online": "https://github.com/PTSolns/PTSolnsCore"
           },
