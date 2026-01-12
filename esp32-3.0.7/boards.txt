@@ -1,3 +1,6 @@
+# 2026-01-12: Removed Flash Size, PSRAM, Zigbee, JTAG, Flash Mode options
+################
+
 # Official Espressif options
 menu.UploadSpeed=Upload Speed
 menu.USBMode=USB Mode
@@ -83,19 +86,10 @@ esp32.build.event_core=
 ## IDE 2.0 Seems to not update the value
 esp32.menu.JTAGAdapter.default=Disabled
 esp32.menu.JTAGAdapter.default.build.copy_jtag_files=0
-esp32.menu.JTAGAdapter.external=FTDI Adapter
-esp32.menu.JTAGAdapter.external.build.openocdscript=esp32-wrover-kit-3.3v.cfg
-esp32.menu.JTAGAdapter.external.build.copy_jtag_files=1
-esp32.menu.JTAGAdapter.bridge=ESP USB Bridge
-esp32.menu.JTAGAdapter.bridge.build.openocdscript=esp32-bridge.cfg
-esp32.menu.JTAGAdapter.bridge.build.copy_jtag_files=1
 
 esp32.menu.PSRAM.disabled=Disabled
 esp32.menu.PSRAM.disabled.build.defines=
 esp32.menu.PSRAM.disabled.build.extra_libs=
-esp32.menu.PSRAM.enabled=Enabled
-esp32.menu.PSRAM.enabled.build.defines=-DBOARD_HAS_PSRAM -mfix-esp32-psram-cache-issue -mfix-esp32-psram-cache-strategy=memw
-esp32.menu.PSRAM.enabled.build.extra_libs=
 
 esp32.menu.PartitionScheme.default=Default 4MB with spiffs (1.2MB APP/1.5MB SPIFFS)
 esp32.menu.PartitionScheme.default.build.partitions=default
@@ -169,23 +163,14 @@ esp32.menu.CPUFreq.10.build.f_cpu=10000000L
 esp32.menu.FlashMode.qio=QIO
 esp32.menu.FlashMode.qio.build.flash_mode=dio
 esp32.menu.FlashMode.qio.build.boot=qio
-esp32.menu.FlashMode.dio=DIO
-esp32.menu.FlashMode.dio.build.flash_mode=dio
-esp32.menu.FlashMode.dio.build.boot=dio
 
 esp32.menu.FlashFreq.80=80MHz
 esp32.menu.FlashFreq.80.build.flash_freq=80m
 esp32.menu.FlashFreq.40=40MHz
 esp32.menu.FlashFreq.40.build.flash_freq=40m
 
-esp32.menu.FlashSize.4M=4MB (32Mb)
-esp32.menu.FlashSize.4M.build.flash_size=4MB
 esp32.menu.FlashSize.8M=8MB (64Mb)
 esp32.menu.FlashSize.8M.build.flash_size=8MB
-esp32.menu.FlashSize.2M=2MB (16Mb)
-esp32.menu.FlashSize.2M.build.flash_size=2MB
-esp32.menu.FlashSize.16M=16MB (128Mb)
-esp32.menu.FlashSize.16M.build.flash_size=16MB
 
 esp32.menu.UploadSpeed.115200=115200
 esp32.menu.UploadSpeed.115200.upload.speed=115200
@@ -221,8 +206,5 @@ esp32.menu.EraseFlash.all.upload.erase_cmd=-e
 esp32.menu.ZigbeeMode.default=Disabled
 esp32.menu.ZigbeeMode.default.build.zigbee_mode=
 esp32.menu.ZigbeeMode.default.build.zigbee_libs=
-esp32.menu.ZigbeeMode.zczr=Zigbee ZCZR (coordinator/router)
-esp32.menu.ZigbeeMode.zczr.build.zigbee_mode=-DZIGBEE_MODE_ZCZR
-esp32.menu.ZigbeeMode.zczr.build.zigbee_libs=-lesp_zb_api_zczr -lesp_zb_cli_command -lzboss_stack.zczr -lzboss_port
 
 ##############################################################
