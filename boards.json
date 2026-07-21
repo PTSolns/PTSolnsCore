@@ -36,6 +36,9 @@
             },
             {
               "name": "Nano Flip 3V3"
+            },
+			  {
+              "name": "PTSolns Mega 2560 R3+"
             }
           ],
           "toolsDependencies": [
