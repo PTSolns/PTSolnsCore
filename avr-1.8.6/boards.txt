@@ -265,7 +265,7 @@ pro.build.f_cpu=8000000L
 
 ##############################################################
 
-mega.name=PTSolns Mega 2560 R3+    [Supporting Materials](https://example.com)   [Buy this Board](https://example.com)
+mega.name=PTSolns Mega 2560 R3+    [Supporting Materials](https://github.com/PTSolns/docs/tree/main/Products/PTS-00215_Mega_2560_R3_Plus/Datasheets)   [Buy this Board](https://ptsolns.com/products/mega-2560-r3)
 
 mega.vid.0=0x2341
 mega.pid.0=0x0010
